@@ -2,7 +2,7 @@ const ideas = [
   {
     Name: "Ice-Box", //if applicable
     Type: "Mobile",
-    Description:"This app will constantly track your pules rating and if your stressed it the app will suggest you different ideas to calm yourself down or suggest you some activites to do and control your stress.",//As detailed as possible
+    Description:"This app will constantly track your pulse rating and if your stressed it the app will suggest you different ideas to calm yourself down or suggest you some activites to do and control your stress.",//As detailed as possible
     Industry: "Wellness",
     Video: "", //if applicable
     Link:"",   //if applicable
