@@ -18,4 +18,14 @@ const ideas = [
     TeckStack:['JavaScript'], 
     MatrixBreaker: "false", 
   },
+  {
+    Name: "allmycourses", 
+    Type: "Browser extension (Chrome)",
+    Description:"This extension will automatically track the progress in all the courses enrolled in various websites, for example, YouTube. The user only needs to add the courses in the extension to find and track their progress in all the courses enrolled across internet.",//As detailed as possible
+    Industry: "Habit/Productivity",
+    Video: "",
+    Link:"", 
+    TeckStack:[], 
+    MatrixBreaker: "true",
+  },
 ];
