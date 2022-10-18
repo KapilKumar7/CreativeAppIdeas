@@ -12,11 +12,11 @@ const ideas = [
   {
     Name: "allmycourses", //if applicable
     Type: "Browser extension (Chrome)",
-    Description:"The extension will automatically track the progress in all the courses enrolled in various websites, for example, YouTube. The user only needs to add the courses in the extension to find and track their progress in all the courses enrolled across internet.",//As detailed as possible
+    Description:"This extension will automatically track the progress in all the courses enrolled in various websites, for example, YouTube. The user only needs to add the courses in the extension to find and track their progress in all the courses enrolled across internet.",//As detailed as possible
     Industry: "Habit/Productivity",
     Video: "", //if applicable
     Link:"", //if applicable
     TeckStack:[''], //if applicable
     MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
-  }
+  },
 ];
