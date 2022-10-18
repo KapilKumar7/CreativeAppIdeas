@@ -16,6 +16,6 @@ const ideas = [
     Video: "",
     Link:"", 
     TeckStack:['JavaScript'], 
-    MatrixBreaker: "true", 
+    MatrixBreaker: "false", 
   },
 ];
