@@ -9,4 +9,14 @@ const ideas = [
     TeckStack:['JavaScript'], //if applicable
     MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
   },
+   {
+    Name: "Memory Usage Tracker", //if applicable
+    Type: "Browser extension",
+    Description:"This extension will track and list you the top 5 or more open tabs that are using the most RAM and slowing down your computer. User can then take decisions to close the tabs and block spam or malicious websites from the extension as per requirement to manage the performance of their PC",//As detailed as possible
+    Industry: "Productivity",
+    Video: "", //if applicable
+    Link:"", //if applicable
+    TeckStack:['JavaScript'], //if applicable
+    MatrixBreaker: "false", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
+  },
 ];
