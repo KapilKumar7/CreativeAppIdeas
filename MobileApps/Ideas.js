@@ -28,5 +28,27 @@ const ideas = [
     Link:"",   
     TeckStack:[],   
     MatrixBreaker: "true",
+  },
+  {
+    Name: "City-route",
+    Type: "Mobile",
+    Description: "The app will be embedded into commercial vehicles like tricycles." +
+    " With the use of a loction service like google maps, the app helps" +
+    " the tech company or the state develop a more accurate map with the" +
+    " correct street names, houses, landmarks etc. This will work by allowing" +
+    " the vehicle owner to add or verify the name/label of a location he/she" +
+    " makes a stop at. Since they carry lots of passengers daily, it will" +
+    " be faster to get the whole layout of a city, maybe within weeks or" +
+    " months. This is especially useful in developing countries. It will" +
+    " help with a lot of things like regional planning, enchancing accuracy" +
+    " of delivery services, more accurate directions etc. This will also" +
+    " help should the company be a transport type like Uber. Users can easily" +
+    " select the location of where they want to go with a very high accuracy" +
+    " right on the app, and a driver who can take them there is sent to them...."
+    Industry:  "Transport/Navigation",
+    Video: "", 
+    Link:"",   
+    TeckStack:[],   
+    MatrixBreaker: "False",
   }
 ];
