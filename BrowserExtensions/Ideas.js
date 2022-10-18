@@ -8,5 +8,14 @@ const ideas = [
     Link:"", //if applicable
     TeckStack:['JavaScript'], //if applicable
     MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
+  },{
+    Name: "Price Compare", //if applicable
+    Type: "Browser extension",
+    Description: "The extension will compare the product in all the online shopping websites and will display the compare price and which online websites have low prices and high prices. The extension can be used for online shopping websites like Amazon, Flipkart, Myntra, etc.",
+    Industry: "Online Shopping websites",
+    Video: "", //if applicable
+    Link:"", //if applicable
+    TeckStack:['JavaScript'], //if applicable
+    MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
   },
 ];
