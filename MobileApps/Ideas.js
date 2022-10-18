@@ -50,5 +50,14 @@ const ideas = [
     Link:"",   
     TeckStack:[],   
     MatrixBreaker: "False",
+  },
+  {
+    Name: "Saloon-and-hairstyle-finder",
+    Type: "Mobile",
+    Description: "A mobile application that helps to find saloons and different hairstyles, when a person designs his/her hair at a saloon he can take a picture of his new style and update it, the saloon too can do the same by updating their hair designs, overall its a hairstyle database.",
+    Industry: "Wellness/grooming/quality-of-life",
+    Video: "", //if applicable
+    Link:"",   //if applicable
+    MatrixBreaker: "false",
   }
 ];
