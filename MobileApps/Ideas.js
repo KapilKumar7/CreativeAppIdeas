@@ -18,5 +18,15 @@ const ideas = [
     Link:"",   //if applicable
     TeckStack:[],//if applicable    
     MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
+  },
+  {
+    Name: "I am - Daily affirmations", //if applicable
+    Type: "Mobile",
+    Description:"This app will provide daily affirmations so that the user stays motivated and confident throughout the day. The user can also customise the affirmations shown.",//As detailed as possible
+    Industry: "Wellness and mental health",
+    Video: "", //if applicable
+    Link:"",   //if applicable
+    TeckStack:[],//if applicable    
+    MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
   }
 ];
