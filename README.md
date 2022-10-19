@@ -38,6 +38,9 @@ const ideas = [
 
 
 ***
+
+##  Avoid pasting ideas which are already exsisting in market(  like Tic-tac-toe or Fooddelivery app etc), If you have added something on top of that then you can definetly add them.
+
 <!-- # 📝 Licensed by <img src="https://img.shields.io/github/license/payloadbox/xss-payload-list"> -->
 # Dont't forget to ⭐ the Repository .
 
