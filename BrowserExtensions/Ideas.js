@@ -37,5 +37,14 @@ const ideas = [
     Link:"", 
     TeckStack:[], 
     MatrixBreaker: "true",
+  },{
+    Name: "Session Buddy", 
+    Type: "Browser extension (Chrome)",
+    Description: "The extension will help you to manage all your bookmarks and tabs even if your computer's ever shutdown unexpectedly. Here you can save tabs to open later, search your open and close tabs, and organize your session by topic.
+    Industry: "Productivity",
+    Video: "",
+    Link:"", 
+    TeckStack:[], 
+    MatrixBreaker: "false", 
   },
 ];
