@@ -38,4 +38,14 @@ const ideas = [
     TeckStack:[], 
     MatrixBreaker: "true",
   },
+  {
+    Name: "Font Recogniser",
+    Type: "Browser extension",
+    Description: "This extension will search for the font of highlighted text (for example in https://fonts.google.com) and via machine learning give the most matching font it could find. The user can then either say that the font matches or that it doesnt match, which will help the programm to more accurately find fonts in the future.",
+    Industry: "quality-of-life",
+    Video: "",
+    Link: "",
+    TeckStack: ["JavaScript", "TensorFlow"],
+    MatrixBreaker: "false"
+  }
 ];
