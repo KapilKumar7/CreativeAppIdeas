@@ -44,7 +44,7 @@ const ideas = [
     " of delivery services, more accurate directions etc. This will also" +
     " help should the company be a transport type like Uber. Users can easily" +
     " select the location of where they want to go with a very high accuracy" +
-    " right on the app, and a driver who can take them there is sent to them...."
+    " right on the app, and a driver who can take them there is sent to them....",
     Industry:  "Transport/Navigation",
     Video: "", 
     Link:"",   
@@ -59,5 +59,12 @@ const ideas = [
     Video: "", //if applicable
     Link:"",   //if applicable
     MatrixBreaker: "false",
+  },
+  {
+    Name: "EcoEat",
+    Type: "Mobile",
+    Description: "Allow restaurants to sell food they were about to waste at discounted prices",
+    Industry: "Food",
+    MatrixBreaker: "false"
   }
 ];
