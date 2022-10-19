@@ -16,5 +16,12 @@ const ideas = [
     Link: "https://preview.redd.it/fbmclbpsi6o81.png?width=639&format=png&auto=webp&s=7a0592980b976f9aff537dda9219091dccec10c6"
     TeckStack:[Discord API],  
     MatrixBreaker: "false",
+  },{
+    Name: "Meme clips Channel",
+    Type: "Accessbility/status",
+    Description:"This will allows you to share memes or mimicry with others for entertainment and laughter.",
+    Link: "",
+    TeckStack:[Discord API],  
+    MatrixBreaker: "false",
   },
 ];
