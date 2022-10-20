@@ -9,14 +9,14 @@ const ideas = [
     TeckStack:['JavaScript'], //if applicable
     MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
   },{
-    Name: "Price Compare", 
+    Name: "Price Compare",
     Type: "Browser extension",
     Description: "The extension will compare the product in all the online shopping websites and will display the compare price and which online websites have low prices and high prices. The extension can be used for online shopping websites like Amazon, Flipkart, Myntra, etc.",
     Industry: "Online Shopping websites",
     Video: "",
-    Link:"", 
-    TeckStack:['JavaScript'], 
-    MatrixBreaker: "false", 
+    Link:"",
+    TeckStack:['JavaScript'],
+    MatrixBreaker: "false",
   },
   {
     Name: "Memory Usage Tracker", 
@@ -34,8 +34,8 @@ const ideas = [
     Description:"This extension will automatically track the progress in all the courses enrolled in various websites, for example, YouTube. The user only needs to add the courses in the extension to find and track their progress in all the courses enrolled across internet.",//As detailed as possible
     Industry: "Habit/Productivity",
     Video: "",
-    Link:"", 
-    TeckStack:[], 
+    Link:"",
+    TeckStack:[],
     MatrixBreaker: "true",
   },{
     Name: "Session Buddy", 
@@ -46,5 +46,15 @@ const ideas = [
     Link:"", 
     TeckStack:[], 
     MatrixBreaker: "false", 
+  },
+  {
+    Name: "View Elapsed Time",
+    Type: "Browser extension",
+    Description:"This extension will show the elapsed time from any date. For example, when the user hovers over the date '2000/01/01', a mouseover description will say '22 years, 9 months and 7 days ago'. The default date format will be 'YYYY/MM/DD'. The extension can be customized to encompass minutes and seconds, and also to edit the default date format.",
+    Industry: "Productivity",
+    Video: "",
+    Link:"",
+    TeckStack:['JavaScript'],
+    MatrixBreaker: "false",
   },
 ];
