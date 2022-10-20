@@ -66,5 +66,12 @@ const ideas = [
     Description: "Allow restaurants to sell food they were about to waste at discounted prices",
     Industry: "Food",
     MatrixBreaker: "false"
+  },
+  {
+    Name: "The bright side",
+    Type: "Mobile",
+    Description: "Write your negative thought and receive an answer which make it positive to help you look on the bright side of life",
+    Industry: "Mental health",
+    MatrixBreaker: "true"
   }
 ];
