@@ -56,5 +56,14 @@ const ideas = [
     Link:"",
     TeckStack:['JavaScript'],
     MatrixBreaker: "false",
+  },{
+    Name: "Mindfulness Reminder",
+    Type: "Browser extension",
+    Description:"This extension will remind you to take a moment for yourself at a chosen interval. For example, users can select 'every 30 minutes' and will be reminded to take a few minutes away from the screen. This is to help maintain mindfulness.",
+    Industry: "Habit/Wellness",
+    Video: "",
+    Link:"",
+    TeckStack:['JavaScript'],
+    MatrixBreaker: "true",
   },
 ];
