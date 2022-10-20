@@ -23,5 +23,13 @@ const ideas = [
     Link: "",
     TeckStack:[Discord API],  
     MatrixBreaker: "false",
+  },{
+    Name: "Discord Servers and Channels",
+    Type: "Accessbility/status",
+    Description:"Servers and channels are a great way to organize information and content and keep multiple discussions flowing and it's quite convenient to switch from text to voice/video or vice versa while using discord without switching over multiple platforms",
+    Link: "",
+    TeckStack:[Discord API],  
+    MatrixBreaker: "false",
   },
 ];
+
