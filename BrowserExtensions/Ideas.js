@@ -57,4 +57,14 @@ const ideas = [
     TeckStack:['JavaScript'],
     MatrixBreaker: "false",
   },
+  {
+    Name: "Hey Water",
+    Type: "Browser extension",
+    Description:"This extension will help to remind you to drink some water while you are focusing working with your system with a preset time using simple browser notifications!.",
+    Industry: "Productivity",
+    Video: "",
+    Link:"",
+    TeckStack:['JavaScript'],
+    MatrixBreaker: "false",
+  },
 ];
