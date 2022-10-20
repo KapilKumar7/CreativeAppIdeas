@@ -83,6 +83,13 @@ const ideas = [
     Description: "Write your negative thought and receive an answer which make it positive to help you look on the bright side of life",
     Industry: "Mental health",
     MatrixBreaker: "true"
+  },
+  {
+    Name: "Best Spot Finder",
+    Type: "Mobile",
+    Description: "This app lets you enter your favoured scenery, an image (or even a drawing), time of the vacation, preferred activity, budget and other variables and one AI shows you the top places.",
+    Industry: "Relax/Have fun",
+    MatrixBreaker: "false"
   }
 
 ];
