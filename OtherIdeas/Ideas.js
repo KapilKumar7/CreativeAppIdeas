@@ -16,5 +16,20 @@ const ideas = [
     Link: "https://preview.redd.it/fbmclbpsi6o81.png?width=639&format=png&auto=webp&s=7a0592980b976f9aff537dda9219091dccec10c6"
     TeckStack:[Discord API],  
     MatrixBreaker: "false",
+  },{
+    Name: "Discord self-bot",
+    Type: "Accessbility/status",
+    Description:"This will welcome new users, filter out spam, ban users who break server rules, play games, and perform thousands of other actions that help your server run smoothly.",
+    Link: "",
+    TeckStack:[Discord API],  
+    MatrixBreaker: "false",
+  },{
+    Name: "Discord Servers and Channels",
+    Type: "Accessbility/status",
+    Description:"Servers and channels are a great way to organize information and content and keep multiple discussions flowing and it's quite convenient to switch from text to voice/video or vice versa while using discord without switching over multiple platforms",
+    Link: "",
+    TeckStack:[Discord API],  
+    MatrixBreaker: "false",
   },
 ];
+
