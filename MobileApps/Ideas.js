@@ -71,7 +71,7 @@ const ideas = [
     Name: "YourFish", 
     Type: "Mobile",
     Description:
-      "This app is dedicated to pet lovers specifically fish lovers. They will have a variety of species both salt-water and fresh-water to buy which will be picked from the local ornamental fish farmers and delevired to the consumer within a week of purchase."//As detailed as possible
+      "This app is dedicated to pet lovers specifically fish lovers. They will have a variety of species both salt-water and fresh-water to buy which will be picked from the local ornamental fish farmers and delevired to the consumer within a week of purchase.",//As detailed as possible
     Industry: "Lifestyle/Online-Business",
     Video: "", 
     Link:"",   
