@@ -19,7 +19,17 @@ const ideas = [
     MatrixBreaker: "false",
   },
   {
-    Name: "allmycourses",
+    Name: "Memory Usage Tracker", 
+    Type: "Browser extension",
+    Description:"This extension will track and list you the top 5 or more open tabs that are using the most RAM and slowing down your computer. User can then take decisions to close the tabs and block spam or malicious websites from the extension as per requirement to manage the performance of their PC",//As detailed as possible
+    Industry: "Productivity",
+    Video: "", 
+    Link:"", 
+    TeckStack:['JavaScript'], 
+    MatrixBreaker: "false",
+  },
+  {
+    Name: "allmycourses", 
     Type: "Browser extension (Chrome)",
     Description:"This extension will automatically track the progress in all the courses enrolled in various websites, for example, YouTube. The user only needs to add the courses in the extension to find and track their progress in all the courses enrolled across internet.",//As detailed as possible
     Industry: "Habit/Productivity",
@@ -27,6 +37,15 @@ const ideas = [
     Link:"",
     TeckStack:[],
     MatrixBreaker: "true",
+  },{
+    Name: "Session Buddy", 
+    Type: "Browser extension (Chrome)",
+    Description: "The extension will help you to manage all your bookmarks and tabs even if your computer's ever shutdown unexpectedly. Here you can save tabs to open later, search your open and close tabs, and organize your session by topic.
+    Industry: "Productivity",
+    Video: "",
+    Link:"", 
+    TeckStack:[], 
+    MatrixBreaker: "false", 
   },
   {
     Name: "View Elapsed Time",

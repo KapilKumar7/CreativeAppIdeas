@@ -44,11 +44,45 @@ const ideas = [
     " of delivery services, more accurate directions etc. This will also" +
     " help should the company be a transport type like Uber. Users can easily" +
     " select the location of where they want to go with a very high accuracy" +
-    " right on the app, and a driver who can take them there is sent to them...."
+    " right on the app, and a driver who can take them there is sent to them....",
     Industry:  "Transport/Navigation",
     Video: "", 
     Link:"",   
     TeckStack:[],   
     MatrixBreaker: "False",
+  },
+  {
+    Name: "Saloon-and-hairstyle-finder",
+    Type: "Mobile",
+    Description: "A mobile application that helps to find saloons and different hairstyles, when a person designs his/her hair at a saloon he can take a picture of his new style and update it, the saloon too can do the same by updating their hair designs, overall its a hairstyle database.",
+    Industry: "Wellness/grooming/quality-of-life",
+    Video: "", //if applicable
+    Link:"",   //if applicable
+    MatrixBreaker: "false",
+  },
+  {
+    Name: "EcoEat",
+    Type: "Mobile",
+    Description: "Allow restaurants to sell food they were about to waste at discounted prices",
+    Industry: "Food",
+    MatrixBreaker: "false"
+  },
+    {
+    Name: "YourFish", 
+    Type: "Mobile",
+    Description:
+      "This app is dedicated to pet lovers specifically fish lovers. They will have a variety of species both salt-water and fresh-water to buy which will be picked from the local ornamental fish farmers and delevired to the consumer within a week of purchase.",//As detailed as possible
+    Industry: "Lifestyle/Online-Business",
+    Video: "", 
+    Link:"",   
+    MatrixBreaker: "false", 
+  },
+  {
+    Name: "The bright side",
+    Type: "Mobile",
+    Description: "Write your negative thought and receive an answer which make it positive to help you look on the bright side of life",
+    Industry: "Mental health",
+    MatrixBreaker: "true"
   }
+
 ];
