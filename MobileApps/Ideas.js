@@ -83,6 +83,13 @@ const ideas = [
     Description: "Write your negative thought and receive an answer which make it positive to help you look on the bright side of life",
     Industry: "Mental health",
     MatrixBreaker: "true"
+  },
+  {
+    Name: "Money Bill Reader",
+    Type: "Mobile",
+    Description: "An app that identifies money bills and coins and speaks on the phone speaker the value and currency, that works with the most diverse currencies in the world",
+    Industry: "Accessibility",
+    MatrixBreaker: "false"
   }
 
 ];
