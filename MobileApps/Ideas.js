@@ -85,10 +85,10 @@ const ideas = [
     MatrixBreaker: "true"
   },
   {
-    Name: "Best Spot Finder",
+    Name: "Money Bill Reader",
     Type: "Mobile",
-    Description: "This app lets you enter your favoured scenery, an image (or even a drawing), time of the vacation, preferred activity, budget and other variables and one AI shows you the top places.",
-    Industry: "Relax/Have fun",
+    Description: "An app that identifies money bills and coins and speaks on the phone speaker the value and currency, that works with the most diverse currencies in the world",
+    Industry: "Accessibility",
     MatrixBreaker: "false"
   }
 
