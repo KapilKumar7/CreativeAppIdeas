@@ -17,9 +17,9 @@ const ideas = [
     TeckStack:[Discord API],  
     MatrixBreaker: "false",
   },{
-    Name: "Meme clips Channel",
+    Name: "Discord self-bot",
     Type: "Accessbility/status",
-    Description:"This will allows you to share memes or mimicry with others for entertainment and laughter.",
+    Description:"This will welcome new users, filter out spam, ban users who break server rules, play games, and perform thousands of other actions that help your server run smoothly.",
     Link: "",
     TeckStack:[Discord API],  
     MatrixBreaker: "false",
