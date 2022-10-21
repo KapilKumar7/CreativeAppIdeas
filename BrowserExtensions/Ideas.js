@@ -65,5 +65,14 @@ const ideas = [
     Link:"",
     TeckStack:['JavaScript'],
     MatrixBreaker: "true",
-  },
+  }, {
+    Name: "Work Tracker",
+    Type: "Browser Extension",
+    Description: "This extension will divide the website based on thier genre, like - Entertaiment, Gaming, Coding etc. And on the basis of time spent on these website, at the end of the day it will email the report to user, telling them, how much time they actually done effective work, and how much time they wasted.",
+    Industry: "Habit",
+    Vide: "",
+    Link: "",
+    TechStack: ['JavaScript'],
+    MatrixBreaker: "true",
+  }
 ];
