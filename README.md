@@ -5,7 +5,7 @@ Share your creative raw ideas 🤯💡🎨 for a better World.
 
 So please share the simplest ideas you have, and make this community the biggest community for the most creative ideas.
 
-![leonardo jpg](https://user-images.githubusercontent.com/100344844/196028251-8ba6c01c-4f5d-4ba5-9f5a-947b832f8b14.jpg)
+![leonardo jpg](https://user-images.githubusercontent.com/100344844/197093647-ab9940c3-0837-4734-b70a-f2f0482dddf5.jpg)
 
 ### Steps to Contribute a idea
 Edit the Ideas.js file to your idea and add the following details in this format as mentioned in the Example.
