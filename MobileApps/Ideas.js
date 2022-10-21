@@ -97,6 +97,13 @@ const ideas = [
     Description: "This app lets you enter your favoured scenery, an image (or even a drawing), time of the vacation, preferred activity, budget and other variables and one AI shows you the top places.",
     Industry: "Relax/Have fun",
     MatrixBreaker: "false"
+  },
+    {
+    Name: "Can I Order?",
+    Type: "Mobile",
+    Description: "This app lets you put in a property address and see a list of food delivery services that can reach the address. It will show a map of the area and the 'cut off' points of other deliver services to help buyers/renters choose a desired property to rent,",
+    Industry: "Real Estate",
+    MatrixBreaker: "false"
   }
 
 ];
