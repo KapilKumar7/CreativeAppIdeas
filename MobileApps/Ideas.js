@@ -104,10 +104,7 @@ const ideas = [
     Description: "This app lets you put in a property address and see a list of food delivery services that can reach the address. It will show a map of the area and the 'cut off' points of other deliver services to help buyers/renters choose a desired property to rent,",
     Industry: "Real Estate",
     MatrixBreaker: "false"
-  }
-
-];
-{
+  },
   {
     Name: "College-buddy", 
     Type: "Mobile",
@@ -117,5 +114,13 @@ const ideas = [
     Link:"",   
     TeckStack:[],  
     MatrixBreaker: "true", 
+  },
+  {
+    Name: "Motivate Me",
+    Type: "Mobile",
+    Description: "This app will deliver each morning a pop up message which contains a motivational quote. This will give a boost to the users mood and help them gain a lot more confidence ti start the day with a fresh mindset.",
+    Industry: "Health/Psychology",
+    MatrixBreaker: "false"
   }
-}
+
+];
