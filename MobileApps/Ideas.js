@@ -107,3 +107,15 @@ const ideas = [
   }
 
 ];
+{
+  {
+    Name: "College-buddy", 
+    Type: "Mobile",
+    Description:"This app can be the best college buddy of students ,show students their class time table ,give notification for next class with room number of the class, students can track their spenditure by noting it, and also note the deadlines of Assigments thus giving students a reminder notification before the selected number of days.",
+    Industry: "College",
+    Video: "", 
+    Link:"",   
+    TeckStack:[],  
+    MatrixBreaker: "true", 
+  }
+}
