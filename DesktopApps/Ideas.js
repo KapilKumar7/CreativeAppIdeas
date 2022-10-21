@@ -1,12 +1,27 @@
 const ideas = [
   {
-    Name: "", //if applicable
-    Type: "",
-    Description:"",//As detailed as possible
-    Industry: "",
-    Video: "", //if applicable
-    Link:"",   //if applicable
-    TeckStack:[],//if applicable    
-    MatrixBreaker: "", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
+    Name: "Software Compatibility Checker",
+    Type: "Desktop",
+    Description:"An App that tells about the compatibility of a software in PC and What are the hardware requirements needed to the PC for the software to work smoothly.",
+    Industry: "Utility",
+  },
+  {
+    Name: "Complete task closer",
+    Type: "Desktop",
+    Description:"An App taht allows a feature that when an user close a software, it also ends that task automatically from task-manager. For better PC performance.",
+    Industry: "Utility",    
+  },
+  {
+    Name: "Software(s) permission teller",
+    Type: "Desktop",
+    Description:"App that tells user what permissions are granted to a software and what permissions is the software currently using, the App has clean UI.",
+    Industry: "Utility",    
+  },
+  {
+    Name: "Rest Reminder for Desktop",
+    Type: "Desktop",
+    Description:"App that reminds the user to take rest after a scheduled time set by the user.",
+    Industry: "Wellness",
+    MatrixBreaker: "true",   
   },
 ];
