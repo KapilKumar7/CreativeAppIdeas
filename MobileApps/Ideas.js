@@ -104,8 +104,14 @@ const ideas = [
     Description: "This app lets you put in a property address and see a list of food delivery services that can reach the address. It will show a map of the area and the 'cut off' points of other deliver services to help buyers/renters choose a desired property to rent,",
     Industry: "Real Estate",
     MatrixBreaker: "false"
+  },
+  {
+    Name: "Wishlist",
+    Type: "Mobile",
+    Description: "This app will notify you if there is specif items with price discount in any market place based on your wishlist in the app. And you can define if the marketplace doesn't matter or you have preferences for some specific market place. This will help you to find the better prices for the the items that you are going to buy. Also the app can eventually provide his own discount codes.",
+    Industry: "market place",
+    MatrixBreaker: "false"
   }
-
 ];
 {
   {
