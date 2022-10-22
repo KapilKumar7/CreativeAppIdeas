@@ -20,6 +20,27 @@ const ideas = [
     MatrixBreaker: "true", 
   },
   {
+    Name: "FOCUS TOGETHER", 
+    Type: "Mobile",
+    Description:"This following app will help college and school students to study and focus together and will engage students in a friendly competitive enviorment created by students."+
+    "This app will have following features:-"+
+    "1.It will have a create group feature in which friends will connect"+
+    "2.It will consist of diffrent sections(features) like assignment sharing and "+
+    "books library, and scheduling of classes and due dates of assignment"+
+    "3.it will also have feature of sharing projects with team members and to track progress and contribution of each memeber with lots of other feature"+
+    "4.There will be a tracker which can track progress of diffrent memeber of group creating self motivation and friendly competitive enviorment"+
+    "5.The common lecture streaming feature will give students a platform to watch lecture together with a text and voice channel to make it more closer to a physical class"+
+    "6.There will be a discussion room in which for topics and questions there will be threads which can be closed when the discussion is over."+
+    "7.The focus clock will determine how much student have studies focusly and productively instead if wasting time on usesless platforms"+
+    "This app will help students in creating a healthy life work balance specially in a situation like coronavirus pandemic,together serving students as a friendly community of smarts minds sharing ideas and guidance and expeierces"+
+    "there will be a lot more features for diffrent kinds of user like teachers,students ,parents and administrations",
+    Industry: "Education",
+    Video: "", 
+    Link:"",   
+    TeckStack:[],  
+    MatrixBreaker: "true", 
+  },
+  {
     Name: "I am - Daily affirmations", 
     Type: "Mobile",
     Description:"This app will provide daily affirmations so that the user stays motivated and confident throughout the day. The user can also customise the affirmations shown.",
