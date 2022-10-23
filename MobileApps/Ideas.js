@@ -120,6 +120,16 @@ const ideas = [
     TeckStack: [],
     MatrixBreaker: "false"
   },
+  {
+    Name: "Wishlist",
+    Type: "Mobile",
+    Description: 
+      "This app will notify you if there is specif items with price discount in any market place based on your wishlist.",
+    UseCases:
+      "You can define if you have a preference for a specific store or not. The app help you to find the better prices.",
+    Industry: "market place",
+    MatrixBreaker: "false"
+  },
     {
     Name: "College-buddy",
       Type: "Mobile",
@@ -139,8 +149,6 @@ const ideas = [
     Link:"",
     MatrixBreaker: "false"
   },
-{
-
   {
     Name: "ExerCycle",
     Type: "Mobile",
@@ -151,6 +159,5 @@ const ideas = [
     TeckStack: [],
     MatrixBreaker: "false" 
   }
-
 ];
 
