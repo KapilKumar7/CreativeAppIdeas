@@ -131,6 +131,17 @@ const ideas = [
       MatrixBreaker: "true"
   },
   {
+    Name: "Hey Mentor!",
+    Type: "Mobile",
+    Description: "This app will let you find a mentor of category or a topic of your choice.",
+    Industry: "Career",
+    Video: "",
+    Link:"",
+    MatrixBreaker: "false"
+  },
+{
+
+  {
     Name: "ExerCycle",
     Type: "Mobile",
     Description:"This app will give users the ability to track their menstrual cycle, mood and symptoms, in each of the 4 phases (menstruation, follicular, ovulation and luteal). Users can also track, find workouts and create workout plans that will best benefit them in order to achieve their workout goals.",
