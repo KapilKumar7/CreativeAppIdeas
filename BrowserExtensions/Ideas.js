@@ -74,5 +74,14 @@ const ideas = [
     Link: "",
     TechStack: ['JavaScript'],
     MatrixBreaker: "true",
+  }, {
+    Name: "CP Tracker",
+    Type: "Browser Extension",
+    Description: "This extension will help all those people who do competetive programming by keeping track of contests on different platforms and ratings of the user on different platforms like codechef, codeforces,atcoder etc. ",
+    Industry: "Competetive Programming",
+    Vide: "",
+    Link: "",
+    TechStack: ['JavaScript'],
+    MatrixBreaker: "true",
   }
 ];

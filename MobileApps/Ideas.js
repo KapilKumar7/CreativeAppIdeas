@@ -120,6 +120,17 @@ const ideas = [
     TeckStack: [],
     MatrixBreaker: "false"
   },
+
+    {
+    Name: "Taskovania",
+    Type: "Mobile",
+    Description: "This app will basically be a game-cum-to-do list app, where the user will setup some tasks he/she has to complete in a day and the app will feature either a medieval creature like dragon etc or an medival rpg character like knight or mage etc (which user can choose). The more tasks the user completes in a day the more points he/she can earn as a reward,the faster they complete the task more the reward, these points can then be traded for upgrading the character. This app can also be developed in such a way that different people can then use their characters to compete in pvp battles. So basically the more productive a person is in a day the stronger his/her character will be which in turn will boost their ranking say on a leaderboard",
+    Industry: "Productivity",
+    Video: "",
+    Link: "",
+    TeckStack: [],
+    MatrixBreaker: "false"
+  },
   {
     Name: "Wishlist",
     Type: "Mobile",
