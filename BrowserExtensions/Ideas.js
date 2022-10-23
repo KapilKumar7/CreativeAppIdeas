@@ -83,5 +83,14 @@ const ideas = [
     Link: "",
     TechStack: ['JavaScript'],
     MatrixBreaker: "true",
+  }, {
+    Name: "OnePeek", 
+    Type: "Browser extension",
+    Description: "This extension will consolidate all of your bank balances from different accounts across different banks (both domestic and foreign) into a single interface. The extension is solely meant for monitoring current bank balances and not for doing any bank activities.",//As detailed as possible
+    Industry: "Productivity",
+    Video: "",
+    Link:"", 
+    TeckStack:[], 
+    MatrixBreaker: "false", 
   }
 ];
