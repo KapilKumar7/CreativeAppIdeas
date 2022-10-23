@@ -104,6 +104,15 @@ const ideas = [
     Description: "This app lets you put in a property address and see a list of food delivery services that can reach the address. It will show a map of the area and the 'cut off' points of other deliver services to help buyers/renters choose a desired property to rent,",
     Industry: "Real Estate",
     MatrixBreaker: "false"
+  },
+  {
+    Name: "Hey Mentor!",
+    Type: "Mobile",
+    Description: "This app will let you find a mentor of category or a topic of your choice.",
+    Industry: "Career",
+    Video: "",
+    Link:"",
+    MatrixBreaker: "false"
   }
 
 ];
