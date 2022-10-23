@@ -65,6 +65,9 @@ const ideas = [
     Type: "Mobile",
     Description: "Allow restaurants to sell food they were about to waste at discounted prices",
     Industry: "Food",
+    Video: "",
+    Link: "",
+    TeckStack: [],
     MatrixBreaker: "false"
   },
   {
@@ -82,6 +85,9 @@ const ideas = [
     Type: "Mobile",
     Description: "Write your negative thought and receive an answer which make it positive to help you look on the bright side of life",
     Industry: "Mental health",
+    Video: "",
+    Link: "",
+    TeckStack: [],
     MatrixBreaker: "true"
   },
   {
@@ -89,6 +95,9 @@ const ideas = [
     Type: "Mobile",
     Description: "An app that identifies money bills and coins and speaks on the phone speaker the value and currency, that works with the most diverse currencies in the world",
     Industry: "Accessibility",
+    Video: "",
+    Link: "",
+    TeckStack: [],
     MatrixBreaker: "false"
   },
   {
@@ -96,6 +105,9 @@ const ideas = [
     Type: "Mobile",
     Description: "This app lets you enter your favoured scenery, an image (or even a drawing), time of the vacation, preferred activity, budget and other variables and one AI shows you the top places.",
     Industry: "Relax/Have fun",
+    Video: "",
+    Link: "",
+    TeckStack: [],
     MatrixBreaker: "false"
   },
   {
@@ -103,27 +115,31 @@ const ideas = [
     Type: "Mobile",
     Description: "This app lets you put in a property address and see a list of food delivery services that can reach the address. It will show a map of the area and the 'cut off' points of other deliver services to help buyers/renters choose a desired property to rent,",
     Industry: "Real Estate",
+    Video: "",
+    Link: "",
+    TeckStack: [],
     MatrixBreaker: "false"
-  }
-
-];
-{
-  {
+  },
+    {
     Name: "College-buddy",
       Type: "Mobile",
-        Description: "This app can be the best college buddy of students ,show students their class time table ,give notification for next class with room number of the class, students can track their spenditure by noting it, and also note the deadlines of Assigments thus giving students a reminder notification before the selected number of days.",
-          Industry: "College",
-            Video: "",
-              Link: "",
-                TeckStack: [],
-                  MatrixBreaker: "true", 
+      Description: "This app can be the best college buddy of students ,show students their class time table ,give notification for next class with room number of the class, students can track their spenditure by noting it, and also note the deadlines of Assigments thus giving students a reminder notification before the selected number of days.",
+      Industry: "College",
+      Video: "",
+      Link: "",
+      TeckStack: [],
+      MatrixBreaker: "true", 
   },
   {
     Name: "ExerCycle",
-      Type: "Mobile",
-        Description:
-    "This app will give users the ability to track their menstrual cycle, mood and symptoms, in each of the 4 phases (menstruation, follicular, ovulation and luteal). Users can also track, find workouts and create workout plans that will best benefit them in order to achieve their workout goals."
+    Type: "Mobile",
+    Description:"This app will give users the ability to track their menstrual cycle, mood and symptoms, in each of the 4 phases (menstruation, follicular, ovulation and luteal). Users can also track, find workouts and create workout plans that will best benefit them in order to achieve their workout goals.",
     Industry: "Wellness, Fitness",
-      MatrixBreaker: "false", 
+    Video: "",
+    Link: "",
+    TeckStack: [],
+    MatrixBreaker: "false", 
   }
-}
+
+];
+
