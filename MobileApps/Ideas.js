@@ -7,7 +7,7 @@ const ideas = [
     Industry: "Wellness",
     Video: "", //if applicable
     Link: "",   //if applicable
-    MatrixBreaker: "true", //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
+    MatrixBreaker: "true" //Here Matrix breaker means if the app will help the user to came out negative Habit patterns Like- addiction, Hatered,lust ,cling to materialism and Take him/her to better control of mind ,Innerpeace ,More awareness ,Minimilism, Warriorness ,Self realisation ,Patience and love etc.
   },
   {
     Name: "Ice-Box",
@@ -17,7 +17,7 @@ const ideas = [
     Video: "",
     Link: "",
     TeckStack: [],
-    MatrixBreaker: "true",
+    MatrixBreaker: "true"
   },
   {
     Name: "I am - Daily affirmations",
@@ -27,7 +27,7 @@ const ideas = [
     Video: "",
     Link: "",
     TeckStack: [],
-    MatrixBreaker: "true",
+    MatrixBreaker: "true"
   },
   {
     Name: "City-route",
@@ -49,7 +49,7 @@ const ideas = [
     Video: "",
     Link: "",
     TeckStack: [],
-    MatrixBreaker: "False",
+    MatrixBreaker: "False"
   },
   {
     Name: "Saloon-and-hairstyle-finder",
@@ -58,7 +58,7 @@ const ideas = [
     Industry: "Wellness/grooming/quality-of-life",
     Video: "", //if applicable
     Link: "",   //if applicable
-    MatrixBreaker: "false",
+    MatrixBreaker: "false"
   },
   {
     Name: "EcoEat",
@@ -78,7 +78,7 @@ const ideas = [
     Industry: "Lifestyle/Online-Business",
     Video: "",
     Link: "",
-    MatrixBreaker: "false",
+    MatrixBreaker: "false"
   },
   {
     Name: "The bright side",
@@ -128,7 +128,7 @@ const ideas = [
       Video: "",
       Link: "",
       TeckStack: [],
-      MatrixBreaker: "true", 
+      MatrixBreaker: "true"
   },
   {
     Name: "ExerCycle",
@@ -138,7 +138,7 @@ const ideas = [
     Video: "",
     Link: "",
     TeckStack: [],
-    MatrixBreaker: "false", 
+    MatrixBreaker: "false" 
   }
 
 ];
