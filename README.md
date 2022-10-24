@@ -16,7 +16,7 @@ const ideas = [
     Name: "Meditation-Minute", //if applicable
     Type: "Mobile",
     Description:
-      "This App will ring (a gong) on a specific time interval like 1 minute or 3 minutes, or any other time interval till the time the meditator has to try to focus his/her mind on the meditation object (like breath or any other meditation object) elapses."//As detailed as possible
+      "This App will ring (a gong) on a specific time interval like 1 minute or 3 minutes, or any other time interval till the time the meditator has to try to focus his/her mind on the meditation object (like breath or any other meditation object) elapses.",//As detailed as possible
     Industry: "Wellness",
     Video: "", //if applicable
     Link:"",   //if applicable
