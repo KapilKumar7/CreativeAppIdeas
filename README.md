@@ -39,7 +39,7 @@ const ideas = [
 
 ***
 
-##  Avoid pasting ideas which are already exsisting in market(  like Tic-tac-toe or Fooddelivery app etc), If you have added something on top of that then you can definetly add them.
+##  Avoid pasting ideas which are already exsisting in market(  like Tic-tac-toe or Fooddelivery app etc), If you have added something on top of that then you can definetly add them.And keep all  8 key's in you idea object i.e -name ,type ,description ,industry ,video ,link ,teckstack ,and matrixbreaker. If some field is unapplicable then keep it blank.
 
 <!-- # 📝 Licensed by <img src="https://img.shields.io/github/license/payloadbox/xss-payload-list"> -->
 # Dont't forget to ⭐ the Repository .
