@@ -169,6 +169,16 @@ const ideas = [
     Link: "",
     TeckStack: [],
     MatrixBreaker: "false" 
+  },
+  {
+    Name: "Cheapest Product Nearby", 
+    Type: "Mobile",
+    Description:"This app allows users to locate a store offering their desired goods at the most affordable price nearby. For instance, the app generates the stores' locations where a  user can purchase a water-bottle based on the cost and distance between them.",
+    Industry: "Utility",
+    Video: "", 
+    Link:"",   
+    TeckStack:[],  
+    MatrixBreaker: "false", 
   }
 ];
 
