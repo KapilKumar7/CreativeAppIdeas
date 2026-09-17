@@ -92,15 +92,15 @@ const ideas = [
     Link:"", 
     TeckStack:[], 
     MatrixBreaker: "false", 
-  }.
+  },
   {
     Name: "BringMeBack", 
     Type: "Browser extension",
-    Description: "This extension will try to bring user to task as user distract , we can use byok to make it better"
+    Description: "Tell the extension what you're working on. When you drift to a distracting tab, it shows a gentle full-page nudge with your task and time left, and one click takes you back. With BYOK (bring your own AI key) it judges whether a page is actually related to your task instead of relying on a blocklist.",
     Industry: "Productivity",
     Video: "",
     Link:"", 
-    TeckStack:[], 
+    TeckStack:['JavaScript', 'WebExtensions API'], 
     MatrixBreaker: "false", 
   }
 ];

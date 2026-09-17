@@ -17,7 +17,7 @@ const ideas = [
     Industry: "Cloud Computing",
     Video: "",
     Link: "https://ethglobal.com/showcase/skyblock-xrttz",
-    TeckStack: [AWS, Solidity, Nextjs],
+    TeckStack: ["AWS", "Solidity", "Nextjs"],
     MatrixBreaker: "false",
   },
   {

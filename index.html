@@ -1,14 +1,1446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreativeAppIdeas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A browsable collection of creative app ideas for mobile apps, web apps, browser extensions, startups, and more.">
+<title>Creative App Ideas</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%A1%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f3f1ec;
+    --cloud: #f7f6f2;
+    --surface: rgb(255 254 249 / .76);
+    --surface-solid: #fffdfa;
+    --surface-strong: #ebe7de;
+    --ink: #1f211f;
+    --muted: #68645d;
+    --faint: #928d84;
+    --line: rgb(51 47 41 / .13);
+    --line-strong: rgb(51 47 41 / .22);
+    --accent: #8b6f5a;
+    --accent-dark: #604836;
+    --teal: #607d75;
+    --gold: #b18a55;
+    --blue: #6f7f91;
+    --violet: #91889b;
+    --pink: #a97870;
+    --lime: #8b9478;
+    --mocha: #a47864;
+    --glass: rgb(255 254 249 / .64);
+    --glass-strong: rgb(255 254 249 / .88);
+    --canvas-opacity: .28;
+    --shadow: 0 24px 70px rgb(58 50 39 / .11);
+    --shadow-strong: 0 34px 96px rgb(58 50 39 / .18);
+    --radius: 8px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #11110f;
+      --cloud: #eeece6;
+      --surface: rgb(31 29 25 / .72);
+      --surface-solid: #1e1c18;
+      --surface-strong: #29251f;
+      --ink: #f4f1ea;
+      --muted: #bbb3a8;
+      --faint: #8f877d;
+      --line: rgb(255 250 240 / .13);
+      --line-strong: rgb(255 250 240 / .22);
+      --accent: #b6967f;
+      --accent-dark: #d7bda8;
+      --teal: #8da79e;
+      --gold: #d2ad77;
+      --blue: #9aa8b5;
+      --violet: #aaa1b1;
+      --pink: #c7988f;
+      --lime: #a4aa8c;
+      --mocha: #b8937e;
+      --glass: rgb(31 29 25 / .62);
+      --glass-strong: rgb(31 29 25 / .86);
+      --canvas-opacity: .34;
+      --shadow: 0 24px 80px rgb(0 0 0 / .34);
+      --shadow-strong: 0 38px 110px rgb(0 0 0 / .44);
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    isolation: isolate;
+    background:
+      linear-gradient(118deg, color-mix(in srgb, var(--cloud) 80%, transparent), transparent 38vw),
+      linear-gradient(160deg, color-mix(in srgb, var(--blue) 8%, transparent), transparent 34vw),
+      linear-gradient(25deg, color-mix(in srgb, var(--mocha) 9%, transparent), transparent 42vw),
+      var(--bg);
+    color: var(--ink);
+    font: 15px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    letter-spacing: 0;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: -30%;
+    z-index: -3;
+    background:
+      radial-gradient(circle at 24% 18%, color-mix(in srgb, var(--cloud) 70%, transparent), transparent 28%),
+      radial-gradient(circle at 82% 16%, color-mix(in srgb, var(--blue) 15%, transparent), transparent 30%),
+      radial-gradient(circle at 76% 78%, color-mix(in srgb, var(--mocha) 15%, transparent), transparent 32%),
+      linear-gradient(135deg, color-mix(in srgb, var(--surface-strong) 42%, transparent), transparent 45%);
+    filter: blur(16px) saturate(.95);
+    opacity: .76;
+    transform-origin: 48% 42%;
+    animation: colorWeather 36s ease-in-out infinite alternate;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgb(95 82 66 / .04) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(95 82 66 / .035) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to bottom, black, transparent 80%);
+    opacity: .46;
+  }
+
+  .mindstorm-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    opacity: var(--canvas-opacity);
+    pointer-events: none;
+  }
+
+  @keyframes colorWeather {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(2deg) scale(1.03) translate3d(1%, -1%, 0); }
+  }
+
+  a { color: inherit; text-underline-offset: 3px; }
+
+  button, input { font: inherit; }
+
+  button { letter-spacing: 0; }
+
+  .wrap {
+    width: min(1180px, calc(100% - 32px));
+    margin-inline: auto;
+  }
+
+  .skip {
+    position: fixed;
+    left: 16px;
+    top: 12px;
+    z-index: 20;
+    translate: 0 -160%;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    text-decoration: none;
+  }
+
+  .skip:focus { translate: 0; }
+
+  .hero,
+  main,
+  footer {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero {
+    padding: 28px 0 24px;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 42px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink);
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .brand-mark {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: 0 8px 18px rgb(23 32 51 / .06);
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    background: var(--accent);
+    color: white;
+    font-weight: 750;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 12px 28px color-mix(in srgb, var(--accent) 25%, transparent);
+    transition: transform .22s ease, border-color .22s ease, background .22s ease, box-shadow .22s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    background: var(--accent-dark);
+    box-shadow: 0 18px 38px color-mix(in srgb, var(--accent) 34%, transparent);
+  }
+
+  .btn.ghost {
+    background: var(--glass);
+    color: var(--ink);
+    border-color: var(--line);
+    box-shadow: none;
+    backdrop-filter: blur(18px);
+  }
+
+  .btn.ghost:hover {
+    background: color-mix(in srgb, var(--surface) 82%, var(--accent));
+    border-color: color-mix(in srgb, var(--line) 55%, var(--accent));
+  }
+
+  .btn:focus-visible,
+  .chip:focus-visible,
+  .shuffle:focus-visible,
+  .card:focus-visible,
+  .search:focus-visible,
+  .close:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--accent) 42%, transparent);
+    outline-offset: 2px;
+  }
+
+  .hero-copy {
+    animation: revealUp .7s cubic-bezier(.2, .8, .2, 1) both;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(310px, .85fr);
+    gap: 28px;
+    align-items: end;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 14px;
+    color: var(--teal);
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    border-radius: 99px;
+    background: var(--teal);
+  }
+
+  h1 {
+    max-width: 780px;
+    margin: 0;
+    font-size: clamp(38px, 7vw, 82px);
+    line-height: .95;
+    letter-spacing: 0;
+  }
+
+  .gradient-text {
+    background: linear-gradient(92deg, var(--accent-dark), var(--mocha) 48%, var(--blue));
+    background-size: 160% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: textPrism 7s ease-in-out infinite alternate;
+  }
+
+  .tag {
+    max-width: 650px;
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: clamp(17px, 2vw, 21px);
+    line-height: 1.55;
+  }
+
+  .prompt-stack {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .prompt-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--glass-strong) 88%, transparent);
+    color: var(--muted);
+    padding: 6px 11px;
+    font-size: 13px;
+    font-weight: 760;
+    box-shadow: 0 12px 28px rgb(58 50 39 / .045);
+    backdrop-filter: blur(18px);
+    animation: floatChip 5s ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+  }
+
+  .hero-panel {
+    display: grid;
+    gap: 14px;
+    align-content: end;
+    animation: revealUp .7s cubic-bezier(.2, .8, .2, 1) .12s both;
+  }
+
+  .quote {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--glass-strong), color-mix(in srgb, var(--cloud) 44%, var(--glass)));
+    box-shadow: var(--shadow);
+    color: var(--muted);
+    backdrop-filter: blur(22px);
+  }
+
+  .quote::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, transparent, rgb(255 255 255 / .22), transparent);
+    transform: translateX(-120%);
+    animation: sheen 8s ease-in-out infinite;
+  }
+
+  .quote strong {
+    position: relative;
+    display: block;
+    margin-bottom: 6px;
+    color: var(--ink);
+    font-size: 16px;
+  }
+
+  .quote span {
+    position: relative;
+  }
+
+  .signal-board {
+    display: grid;
+    gap: 8px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--glass) 88%, transparent);
+    box-shadow: var(--shadow);
+    padding: 14px;
+    backdrop-filter: blur(20px);
+  }
+
+  .signal-row {
+    display: grid;
+    grid-template-columns: 86px 1fr;
+    align-items: center;
+    gap: 10px;
+    color: var(--faint);
+    font-size: 12px;
+    font-weight: 780;
+    text-transform: uppercase;
+  }
+
+  .signal-line {
+    height: 7px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--ink) 8%, transparent);
+  }
+
+  .signal-line::before {
+    content: "";
+    display: block;
+    width: var(--level);
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--mocha), var(--gold), var(--teal));
+    background-size: 160% 100%;
+    animation: signalPulse 4.8s ease-in-out infinite alternate, textPrism 12s ease-in-out infinite alternate;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .stat {
+    position: relative;
+    overflow: hidden;
+    min-height: 88px;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--glass) 90%, var(--surface-strong));
+    box-shadow: 0 14px 36px rgb(58 50 39 / .07);
+    backdrop-filter: blur(18px);
+  }
+
+  .stat::after {
+    content: "";
+    position: absolute;
+    inset: auto 10px 9px;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--mocha), var(--gold), var(--teal));
+  }
+
+  .stat b {
+    display: block;
+    color: var(--ink);
+    font-size: 27px;
+    line-height: 1;
+  }
+
+  .stat span {
+    display: block;
+    margin-top: 7px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 750;
+    text-transform: uppercase;
+  }
+
+  @keyframes revealUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes textPrism {
+    from { background-position: 0% 50%; }
+    to { background-position: 100% 50%; }
+  }
+
+  @keyframes floatChip {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  @keyframes sheen {
+    0%, 58% { transform: translateX(-120%); }
+    72%, 100% { transform: translateX(120%); }
+  }
+
+  @keyframes signalPulse {
+    from { filter: saturate(1); transform: scaleX(.92); transform-origin: left; }
+    to { filter: saturate(1.35); transform: scaleX(1); transform-origin: left; }
+  }
+
+  .controls {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-block: 1px solid var(--line);
+    background: color-mix(in srgb, var(--glass-strong) 82%, transparent);
+    box-shadow: 0 14px 40px rgb(31 36 54 / .08);
+    backdrop-filter: blur(24px) saturate(1.2);
+  }
+
+  .control-inner {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) auto auto;
+    gap: 14px;
+    align-items: center;
+    padding: 14px 0;
+  }
+
+  .search-wrap {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    translate: 0 -50%;
+    color: var(--faint);
+    pointer-events: none;
+  }
+
+  .search {
+    width: 100%;
+    height: 46px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--glass-strong);
+    color: var(--ink);
+    padding: 0 16px 0 42px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / .2);
+    backdrop-filter: blur(18px);
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+
+  .search:focus {
+    border-color: color-mix(in srgb, var(--blue) 60%, var(--line));
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--blue) 14%, transparent);
+    transform: translateY(-1px);
+  }
+
+  .search::placeholder { color: var(--faint); }
+
+  .tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-block: 2px;
+    scrollbar-width: thin;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 38px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--glass);
+    color: var(--ink);
+    cursor: pointer;
+    padding: 7px 10px;
+    white-space: nowrap;
+    backdrop-filter: blur(18px);
+    transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+  }
+
+  .chip:hover {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--mocha) 42%, var(--line));
+  }
+
+  .chip[aria-pressed="true"] {
+    background: linear-gradient(135deg, var(--ink), color-mix(in srgb, var(--mocha) 44%, var(--ink)));
+    border-color: color-mix(in srgb, var(--mocha) 55%, var(--ink));
+    color: white;
+    box-shadow: 0 12px 26px color-mix(in srgb, var(--mocha) 18%, transparent);
+  }
+
+  .chip .count {
+    display: inline-grid;
+    min-width: 24px;
+    min-height: 22px;
+    place-items: center;
+    border-radius: 999px;
+    background: color-mix(in srgb, currentColor 10%, transparent);
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .shuffle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    border: 1px solid color-mix(in srgb, var(--mocha) 42%, var(--line));
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, color-mix(in srgb, var(--mocha) 16%, var(--glass-strong)), color-mix(in srgb, var(--cloud) 64%, var(--glass-strong)));
+    color: var(--ink);
+    cursor: pointer;
+    font-weight: 820;
+    padding: 8px 12px;
+    white-space: nowrap;
+    box-shadow: 0 14px 30px color-mix(in srgb, var(--mocha) 12%, transparent);
+    backdrop-filter: blur(18px);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+
+  .shuffle:hover {
+    border-color: color-mix(in srgb, var(--mocha) 64%, var(--line));
+    box-shadow: 0 18px 38px color-mix(in srgb, var(--mocha) 18%, transparent);
+    transform: translateY(-2px);
+  }
+
+  main {
+    padding: 24px 0 56px;
+  }
+
+  .results-bar {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .meta {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .meta strong {
+    color: var(--ink);
+  }
+
+  .hint {
+    margin: 0;
+    color: var(--faint);
+    font-size: 13px;
+  }
+
+  .warn {
+    display: none;
+    margin-bottom: 16px;
+    border: 1px solid color-mix(in srgb, var(--gold) 38%, var(--line));
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--gold) 12%, var(--surface));
+    color: var(--ink);
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .warn:not(:empty) { display: block; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+    gap: 16px;
+    perspective: 1200px;
+  }
+
+  .card {
+    --card-accent: hsl(var(--hue, 35) 24% 45%);
+    --mx: 50%;
+    --my: 0%;
+    position: relative;
+    overflow: hidden;
+    min-height: 236px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background:
+      radial-gradient(circle at var(--mx) var(--my), color-mix(in srgb, var(--card-accent) 12%, transparent), transparent 34%),
+      linear-gradient(145deg, color-mix(in srgb, var(--glass-strong) 94%, transparent), color-mix(in srgb, var(--card-accent) 5%, var(--glass)));
+    color: inherit;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    box-shadow: 0 12px 34px rgb(58 50 39 / .07);
+    backdrop-filter: blur(18px);
+    transform: translateY(12px);
+    animation: cardRise .62s cubic-bezier(.18, .9, .2, 1) both;
+    animation-delay: var(--delay, 0ms);
+    transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background .22s ease;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--card-accent) 42%, transparent), transparent 42%, color-mix(in srgb, var(--mocha) 22%, transparent));
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    opacity: .45;
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    right: 18px;
+    height: 3px;
+    border-radius: 0 0 999px 999px;
+    background: linear-gradient(90deg, var(--card-accent), color-mix(in srgb, var(--mocha) 70%, var(--cloud)));
+    opacity: .72;
+  }
+
+  .card:hover {
+    border-color: color-mix(in srgb, var(--card-accent) 66%, var(--line));
+    box-shadow: var(--shadow-strong);
+    transform: translateY(-7px) rotateX(1deg);
+  }
+
+  .card-top {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .cat {
+    color: var(--card-accent, var(--blue));
+    font-size: 12px;
+    font-weight: 850;
+    text-transform: uppercase;
+  }
+
+  .type {
+    max-width: 42%;
+    color: var(--faint);
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .card h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.18;
+  }
+
+  .card p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: var(--muted);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+  }
+
+  .pills {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;
+  }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    min-height: 25px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    padding: 3px 9px;
+    font-size: 12px;
+    font-weight: 700;
+    background: color-mix(in srgb, var(--glass-strong) 60%, transparent);
+  }
+
+  .pill.teal {
+    border-color: color-mix(in srgb, var(--teal) 38%, var(--line));
+    color: var(--teal);
+    background: color-mix(in srgb, var(--teal) 8%, transparent);
+  }
+
+  @keyframes cardRise {
+    from { opacity: 0; transform: translateY(18px) scale(.985); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  .empty {
+    grid-column: 1 / -1;
+    border: 1px dashed var(--line-strong);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--surface) 60%, transparent);
+    color: var(--muted);
+    padding: 42px 20px;
+    text-align: center;
+  }
+
+  dialog {
+    width: min(720px, calc(100% - 28px));
+    max-height: min(780px, calc(100vh - 28px));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(145deg, color-mix(in srgb, var(--glass-strong) 94%, transparent), color-mix(in srgb, var(--violet) 9%, var(--glass))),
+      var(--surface-solid);
+    color: var(--ink);
+    padding: 0;
+    box-shadow: var(--shadow-strong);
+    backdrop-filter: blur(28px) saturate(1.12);
+    animation: modalIn .26s cubic-bezier(.2, .8, .2, 1) both;
+  }
+
+  dialog::backdrop {
+    background: rgb(8 12 18 / .62);
+    backdrop-filter: blur(8px);
+  }
+
+  .modal-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid var(--line);
+    padding: 22px 22px 16px;
+  }
+
+  .modal-title {
+    min-width: 0;
+  }
+
+  dialog h2 {
+    margin: 5px 0 0;
+    font-size: clamp(27px, 5vw, 40px);
+    line-height: 1.05;
+  }
+
+  .close {
+    display: grid;
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--glass-strong) 80%, transparent);
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 1;
+    transition: transform .2s ease, border-color .2s ease, color .2s ease;
+  }
+
+  .close:hover {
+    border-color: color-mix(in srgb, var(--accent) 54%, var(--line));
+    color: var(--accent);
+    transform: rotate(4deg) scale(1.04);
+  }
+
+  .modal-body {
+    padding: 20px 22px 22px;
+  }
+
+  .modal-desc {
+    margin: 0;
+    color: var(--muted);
+    font-size: 16px;
+    white-space: pre-line;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .detail {
+    min-width: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px;
+    background: color-mix(in srgb, var(--glass-strong) 78%, transparent);
+  }
+
+  .detail dt {
+    margin-bottom: 3px;
+    color: var(--faint);
+    font-size: 12px;
+    font-weight: 850;
+    text-transform: uppercase;
+  }
+
+  .detail dd {
+    margin: 0;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+
+  .modal-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(12px) scale(.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  footer {
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    padding: 26px 0 42px;
+  }
+
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  @media (max-width: 880px) {
+    .hero-grid,
+    .control-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-panel {
+      max-width: 680px;
+    }
+
+    .tabs {
+      padding-bottom: 6px;
+    }
+
+    .shuffle {
+      justify-self: start;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .wrap {
+      width: min(100% - 24px, 1180px);
+    }
+
+    .hero {
+      padding-top: 18px;
+    }
+
+    .nav {
+      align-items: flex-start;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .actions {
+      width: 100%;
+      justify-content: stretch;
+    }
+
+    .actions .btn {
+      flex: 1 1 150px;
+    }
+
+    .prompt-stack {
+      align-items: flex-start;
+    }
+
+    .stats,
+    .details {
+      grid-template-columns: 1fr;
+    }
+
+    .results-bar {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .card {
+      min-height: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: .01ms !important;
+    }
+
+    .mindstorm-canvas {
+      display: none;
+    }
+  }
+</style>
 </head>
 <body>
+<canvas class="mindstorm-canvas" aria-hidden="true"></canvas>
+<a class="skip" href="#ideas">Skip to ideas</a>
 
-    <!--  -->
-    
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="./" aria-label="Creative App Ideas home">
+        <span class="brand-mark" aria-hidden="true">💡</span>
+        <span>CreativeAppIdeas</span>
+      </a>
+      <div class="actions">
+        <a class="btn ghost" href="https://github.com/KapilKumar7/CreativeAppIdeas" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://github.com/KapilKumar7/CreativeAppIdeas/blob/main/CONTRIBUTE.md" target="_blank" rel="noopener">Share an Idea</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Open idea catalog</p>
+        <h1>Find a raw app idea <span class="gradient-text">worth building next.</span></h1>
+        <p class="tag">Browse community-submitted concepts across mobile, web, browser extensions, startups, and calm productivity tools. Search the pile, spot a promising angle, then make it real.</p>
+        <div class="prompt-stack" aria-label="Idea themes">
+          <span class="prompt-pill" style="--delay: 0s">AI copilots</span>
+          <span class="prompt-pill" style="--delay: .4s">habit design</span>
+          <span class="prompt-pill" style="--delay: .8s">browser tools</span>
+          <span class="prompt-pill" style="--delay: 1.2s">wellness systems</span>
+          <span class="prompt-pill" style="--delay: 1.6s">community products</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Collection summary">
+        <p class="quote"><strong>Simple ideas, practical starting points.</strong> <span>Each card keeps the shape of the idea close at hand: what it is, who it helps, and what it might be built with.</span></p>
+        <div class="signal-board" aria-label="Creative signal levels">
+          <div class="signal-row"><span>Build spark</span><span class="signal-line" style="--level: 88%"></span></div>
+          <div class="signal-row"><span>Utility</span><span class="signal-line" style="--level: 72%"></span></div>
+          <div class="signal-row"><span>Weirdness</span><span class="signal-line" style="--level: 64%"></span></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b data-stat="ideas">0</b><span>Ideas</span></div>
+          <div class="stat"><b data-stat="categories">0</b><span>Categories</span></div>
+          <div class="stat"><b data-stat="matrix">0</b><span>Mindful</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<section class="controls" aria-label="Idea filters">
+  <div class="wrap control-inner">
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input class="search" type="search" placeholder="Search by idea, industry, category, or tech stack" aria-label="Search ideas">
+    </div>
+    <div class="tabs" role="group" aria-label="Category filters"></div>
+    <button class="shuffle" type="button">Surprise Me</button>
+  </div>
+</section>
+
+<main class="wrap" id="ideas">
+  <div class="results-bar">
+    <p class="meta" aria-live="polite">Loading ideas...</p>
+    <p class="hint">Select any idea to view details.</p>
+  </div>
+  <div class="warn" role="status"></div>
+  <div class="grid"></div>
+</main>
+
+<dialog aria-labelledby="idea-title">
+  <div class="modal-head">
+    <div class="modal-title"></div>
+    <button class="close" aria-label="Close dialog" type="button">&times;</button>
+  </div>
+  <div class="modal-body"></div>
+</dialog>
+
+<footer>
+  <div class="wrap">
+    <p>Created by <a href="https://github.com/KapilKumar7" target="_blank" rel="noopener">Kapil Kumar</a> and contributors.</p>
+    <p><a href="https://github.com/KapilKumar7/CreativeAppIdeas/graphs/contributors" target="_blank" rel="noopener">Contributors</a> · <a href="https://github.com/KapilKumar7/CreativeAppIdeas" target="_blank" rel="noopener">Star on GitHub</a></p>
+  </div>
+</footer>
+
+<script>
+const CATEGORIES = {
+  MobileApps: "Mobile Apps",
+  WebApplicationsIdeas: "Web Apps",
+  BrowserExtensions: "Browser Extensions",
+  DesktopApps: "Desktop Apps",
+  StartupIdeas: "Startups",
+  MatrixBreakingApps: "Matrix Breaking",
+  OtherIdeas: "Other",
+};
+
+const CATEGORY_ICONS = {
+  all: "All",
+  MobileApps: "Mobile",
+  WebApplicationsIdeas: "Web",
+  BrowserExtensions: "Extension",
+  DesktopApps: "Desktop",
+  StartupIdeas: "Startup",
+  MatrixBreakingApps: "Mindful",
+  OtherIdeas: "Other",
+};
+
+const CATEGORY_HUES = {
+  MobileApps: 18,
+  WebApplicationsIdeas: 210,
+  BrowserExtensions: 168,
+  DesktopApps: 265,
+  StartupIdeas: 36,
+  MatrixBreakingApps: 128,
+  OtherIdeas: 316,
+};
+
+const MB_TAB = "MatrixBreakingApps";
+
+let all = [];
+let cat = "all";
+let q = "";
+
+const $ = selector => document.querySelector(selector);
+const esc = value => String(value ?? "").replace(/[&<>"']/g, char => `&#${char.charCodeAt(0)};`);
+const plural = (count, word) => `${count} ${word}${count === 1 ? "" : "s"}`;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+async function load(folder) {
+  const res = await fetch(`${folder}/Ideas.js`);
+  if (!res.ok) throw new Error(res.status);
+  const list = new Function(`${await res.text()}\n;return ideas;`)();
+
+  return list
+    .filter(item => item.Name && item.Name.trim())
+    .map(item => ({
+      folder,
+      name: item.Name.trim(),
+      type: item.Type || "",
+      description: item.Description || item.UseCases || "",
+      industry: item.Industry || "",
+      video: item.Video || item.Vide || "",
+      link: item.Link || "",
+      tech: [].concat(item.TeckStack || item.TechStack || []).filter(Boolean),
+      matrix: String(item.MatrixBreaker).toLowerCase() === "true",
+    }));
+}
+
+function categoryCount(folder) {
+  if (folder === "all") return all.length;
+  return all.filter(item => folder === MB_TAB ? item.matrix || item.folder === MB_TAB : item.folder === folder).length;
+}
+
+function activeLabel() {
+  return cat === "all" ? "all categories" : CATEGORIES[cat].toLowerCase();
+}
+
+function matches(item) {
+  if (cat === MB_TAB ? !(item.matrix || item.folder === MB_TAB) : cat !== "all" && item.folder !== cat) return false;
+  if (!q) return true;
+  return [item.name, item.type, item.description, item.industry, CATEGORIES[item.folder], ...item.tech]
+    .join(" ")
+    .toLowerCase()
+    .includes(q);
+}
+
+function renderStats() {
+  const categoryTotal = Object.keys(CATEGORIES).filter(folder => categoryCount(folder)).length;
+  animateStat($('[data-stat="ideas"]'), all.length);
+  animateStat($('[data-stat="categories"]'), categoryTotal);
+  animateStat($('[data-stat="matrix"]'), categoryCount(MB_TAB));
+}
+
+function animateStat(node, target) {
+  if (reducedMotion) {
+    node.textContent = target;
+    return;
+  }
+
+  const start = Number(node.textContent) || 0;
+  const duration = 720;
+  const started = performance.now();
+
+  function tick(now) {
+    const progress = Math.min((now - started) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    node.textContent = Math.round(start + (target - start) * eased);
+    if (progress < 1) requestAnimationFrame(tick);
+  }
+
+  requestAnimationFrame(tick);
+}
+
+function renderTabs() {
+  $(".tabs").innerHTML = [["all", "All"], ...Object.entries(CATEGORIES)]
+    .filter(([folder]) => categoryCount(folder))
+    .map(([folder, label]) => `
+      <button class="chip" type="button" data-cat="${folder}" aria-pressed="${folder === cat}">
+        <span>${esc(CATEGORY_ICONS[folder] || label)}</span>
+        <span class="count">${categoryCount(folder)}</span>
+      </button>
+    `)
+    .join("");
+}
+
+function render() {
+  const shown = all.filter(matches);
+  const queryText = q ? ` matching "${esc(q)}"` : "";
+  $(".meta").innerHTML = `<strong>${plural(shown.length, "idea")}</strong> in ${esc(activeLabel())}${queryText}`;
+  $(".grid").innerHTML = shown.length ? shown.map((item, index) => `
+    <button class="card" type="button" data-idx="${all.indexOf(item)}" style="--hue: ${CATEGORY_HUES[item.folder] || 210}; --delay: ${Math.min(index, 14) * 34}ms;">
+      <span class="card-top">
+        <span class="cat">${esc(CATEGORIES[item.folder])}</span>
+        ${item.type ? `<span class="type">${esc(item.type)}</span>` : ""}
+      </span>
+      <h2>${esc(item.name)}</h2>
+      <p>${esc(item.description || "No description yet.")}</p>
+      <span class="pills">
+        ${item.matrix ? `<span class="pill teal">Matrix Breaker</span>` : ""}
+        ${item.industry ? `<span class="pill">${esc(item.industry)}</span>` : ""}
+        ${item.tech.slice(0, 3).map(tech => `<span class="pill">${esc(tech)}</span>`).join("")}
+      </span>
+    </button>
+  `).join("") : `
+    <div class="empty">
+      <strong>No matching ideas yet.</strong><br>
+      Try a broader search or add the idea you wish existed.
+    </div>
+  `;
+}
+
+function surpriseIdea() {
+  const shown = all.filter(matches);
+  if (!shown.length) return;
+  const item = shown[Math.floor(Math.random() * shown.length)];
+  showIdea(item);
+}
+
+function linkValue(value) {
+  return /^https?:\/\//.test(value)
+    ? `<a href="${esc(value)}" target="_blank" rel="noopener">${esc(value)}</a>`
+    : esc(value);
+}
+
+function showIdea(item) {
+  const rows = [
+    ["Category", esc(CATEGORIES[item.folder])],
+    ["Type", esc(item.type)],
+    ["Industry", esc(item.industry)],
+    ["Tech stack", esc(item.tech.join(", "))],
+    ["Project link", linkValue(item.link)],
+    ["Video", linkValue(item.video)],
+    ["Matrix Breaker", item.matrix ? "Yes" : ""],
+  ].filter(([, value]) => value);
+
+  $(".modal-title").innerHTML = `
+    <span class="cat">${esc(CATEGORIES[item.folder])}</span>
+    <h2 id="idea-title">${esc(item.name)}</h2>
+  `;
+  $(".modal-body").innerHTML = `
+    <p class="modal-desc">${esc(item.description) || "<em>No description yet.</em>"}</p>
+    <dl class="details">
+      ${rows.map(([key, value]) => `
+        <div class="detail">
+          <dt>${key}</dt>
+          <dd>${value}</dd>
+        </div>
+      `).join("")}
+    </dl>
+    <div class="modal-actions">
+      <a class="btn" href="https://github.com/KapilKumar7/CreativeAppIdeas/blob/main/${item.folder}/Ideas.js" target="_blank" rel="noopener">View Source</a>
+      <a class="btn ghost" href="https://github.com/KapilKumar7/CreativeAppIdeas/blob/main/CONTRIBUTE.md" target="_blank" rel="noopener">Contribute</a>
+    </div>
+  `;
+  $("dialog").showModal();
+}
+
+$(".search").addEventListener("input", event => {
+  q = event.target.value.trim().toLowerCase();
+  render();
+});
+
+$(".tabs").addEventListener("click", event => {
+  const button = event.target.closest("button");
+  if (!button) return;
+  cat = button.dataset.cat;
+  renderTabs();
+  render();
+});
+
+$(".grid").addEventListener("click", event => {
+  const card = event.target.closest(".card");
+  if (card) showIdea(all[Number(card.dataset.idx)]);
+});
+
+$(".grid").addEventListener("pointermove", event => {
+  const card = event.target.closest(".card");
+  if (!card) return;
+  const rect = card.getBoundingClientRect();
+  card.style.setProperty("--mx", `${event.clientX - rect.left}px`);
+  card.style.setProperty("--my", `${event.clientY - rect.top}px`);
+});
+
+$(".grid").addEventListener("pointerout", event => {
+  const card = event.target.closest(".card");
+  if (!card || card.contains(event.relatedTarget)) return;
+  card.style.setProperty("--mx", "50%");
+  card.style.setProperty("--my", "0%");
+});
+
+$(".shuffle").addEventListener("click", surpriseIdea);
+$("dialog .close").addEventListener("click", () => $("dialog").close());
+$("dialog").addEventListener("click", event => {
+  if (event.target === event.currentTarget) $("dialog").close();
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "/" && document.activeElement !== $(".search") && !$("dialog").open) {
+    event.preventDefault();
+    $(".search").focus();
+  }
+});
+
+function initMindstorm() {
+  if (reducedMotion) return;
+
+  const canvas = $(".mindstorm-canvas");
+  const ctx = canvas.getContext("2d");
+  const pointer = { x: innerWidth * .7, y: innerHeight * .28 };
+  let width = 0;
+  let height = 0;
+  let particles = [];
+
+  const colors = ["#a47864", "#8b6f5a", "#6f7f91", "#607d75", "#b18a55", "#91889b"];
+
+  function resize() {
+    const ratio = Math.min(devicePixelRatio || 1, 2);
+    width = innerWidth;
+    height = innerHeight;
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+    const count = Math.min(54, Math.max(24, Math.floor(width * height / 29000)));
+    particles = Array.from({ length: count }, (_, index) => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - .5) * .18,
+      vy: (Math.random() - .5) * .18,
+      size: 1 + Math.random() * 1.6,
+      color: colors[index % colors.length],
+    }));
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    ctx.globalCompositeOperation = "lighter";
+
+    for (const particle of particles) {
+      const dx = pointer.x - particle.x;
+      const dy = pointer.y - particle.y;
+      const distance = Math.hypot(dx, dy) || 1;
+      const pull = Math.min(1.1 / distance, .01);
+
+      particle.vx += dx * pull * .002;
+      particle.vy += dy * pull * .002;
+      particle.x += particle.vx;
+      particle.y += particle.vy;
+      particle.vx *= .993;
+      particle.vy *= .993;
+
+      if (particle.x < -20) particle.x = width + 20;
+      if (particle.x > width + 20) particle.x = -20;
+      if (particle.y < -20) particle.y = height + 20;
+      if (particle.y > height + 20) particle.y = -20;
+
+      ctx.beginPath();
+      ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+      ctx.fillStyle = particle.color;
+      ctx.globalAlpha = .13;
+      ctx.fill();
+    }
+
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const a = particles[i];
+        const b = particles[j];
+        const distance = Math.hypot(a.x - b.x, a.y - b.y);
+        if (distance > 118) continue;
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.strokeStyle = a.color;
+        ctx.globalAlpha = (1 - distance / 118) * .08;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  addEventListener("resize", resize);
+  addEventListener("pointermove", event => {
+    pointer.x = event.clientX;
+    pointer.y = event.clientY;
+  }, { passive: true });
+
+  resize();
+  draw();
+}
+
+(async () => {
+  $(".meta").textContent = "Loading ideas...";
+  const folders = Object.keys(CATEGORIES);
+  const results = await Promise.allSettled(folders.map(load));
+  const failed = folders.filter((_, index) => results[index].status === "rejected");
+
+  all = results.flatMap(result => result.status === "fulfilled" ? result.value : []);
+  $(".warn").textContent = failed.length
+    ? (location.protocol === "file:"
+        ? "Open this page through a local server, such as python3 -m http.server. Browsers block loading local files directly."
+        : `Couldn't load: ${failed.join(", ")}. Check those files for syntax errors.`)
+    : "";
+
+  renderStats();
+  renderTabs();
+  render();
+  initMindstorm();
+})();
+</script>
 </body>
 </html>
